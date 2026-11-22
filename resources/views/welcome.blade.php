@@ -33,7 +33,7 @@
                             class="w-full h-56"
                         ></model-viewer>
                         <figcaption class="mt-2 text-xs text-gray-600">
-                            <span>3D of Diponegoro's Statue at Monumen Nasional, Jakarta.</span>
+                            <span>Pangeran Diponegoro (3D) at Monumen Nasional, Jakarta.</span>
                             <span>Reconstructed using VGGT.</span>
                         </figcaption>
                     </figure>
