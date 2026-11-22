@@ -16,7 +16,7 @@ COPY . .
 RUN composer dump-autoload --optimize --no-scripts
 
 FROM dunglas/frankenphp:1.14.0-php8.5
-RUN install-php-extensions pcntl
+RUN install-php-extensions pcntl pdo_pgsql
 WORKDIR /app
 COPY --from=vendor /app ./
 COPY --from=assets /app/public/build/manifest.json ./public/build/manifest.json
