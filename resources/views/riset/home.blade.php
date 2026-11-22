@@ -6,7 +6,6 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-        
     </head>
     <body class="antialiased">
         <main class="max-w-5xl mx-auto py-8">
