@@ -20,4 +20,4 @@ RUN install-php-extensions pcntl
 WORKDIR /app
 COPY --from=vendor /app ./
 COPY --from=assets /app/public/build/manifest.json ./public/build/manifest.json
-CMD php artisan migrate --force && php artisan optimize && exec php artisan octane:frankenphp --caddyfile=/etc/caddy/Caddyfile --workers=auto --max-requests=500
+CMD php artisan migrate --force && php artisan optimize && exec php artisan octane:frankenphp --host=0.0.0.0 --port=8000 --workers=auto --max-requests=2000
