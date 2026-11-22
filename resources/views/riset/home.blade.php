@@ -37,7 +37,6 @@
                             <span>Reconstructed using VGGT.</span>
                         </figcaption>
                     </figure>
-
                 </div>
             </section>
         </main>

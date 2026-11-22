@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::domain('riset.' . config('app.domain'))->group(function () {
+    Route::get('/', fn () => view('riset.home'));
 });
