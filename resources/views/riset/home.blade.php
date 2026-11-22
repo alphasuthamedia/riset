@@ -30,7 +30,7 @@
                             shadow-intensity="1"
                             interaction-prompt="none"
                             camera-orbit="290deg 75deg 15%"
-                            class="w-full h-56"
+                            class="w-full h-56 bg-gray-200"
                         ></model-viewer>
                         <figcaption class="mt-2 text-xs text-gray-600">
                             <span>Pangeran Diponegoro (3D) at Monumen Nasional, Jakarta.</span>
