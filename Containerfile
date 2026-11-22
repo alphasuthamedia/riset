@@ -20,5 +20,4 @@ RUN install-php-extensions pcntl
 WORKDIR /app
 COPY --from=vendor /app ./
 COPY --from=assets /app/public/build/manifest.json ./public/build/manifest.json
-RUN chmod +x docker/entrypoint.sh
-ENTRYPOINT ["docker/entrypoint.sh"]
+CMD php artisan migrate --force && php artisan optimize && exec php artisan octane:frankenphp --caddyfile=/etc/caddy/Caddyfile --workers=auto --max-requests=500
