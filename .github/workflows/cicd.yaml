@@ -36,7 +36,7 @@ jobs:
           outputs: type=local,dest=site
           cache-from: type=gha
           cache-to: type=gha,mode=max
-      - run: cp -r public/models public/favicon.ico public/robots.txt site/
+      - run: cp -r public/riset public/favicon.ico public/robots.txt site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
