@@ -80,11 +80,6 @@
                 </figcaption>
             </figure>
         </div>
-
-        <p class="mt-6">
-            The same pipeline failed on two larger scenes, Bundaran HI and the Monas obelisk.
-            How VGGT works comes first, then the experiment, the failures, and my guesses why.
-        </p>
     </div>
 
     <hr class="mt-12">
@@ -92,7 +87,7 @@
 @verbatim
     <!-- @verbatim: Blade tidak memproses isi blok ini, jadi kurung kurawal LaTeX aman -->
     <div class="max-w-7xl mx-auto">
-        <h2 class="mt-6 text-2xl font-bold font-sans">How VGGT Works</h2>
+        <h2 class="mt-6 text-2xl font-bold font-sans">VGGT</h2>
 
         <div class="mt-4 space-y-2">
             <p>
