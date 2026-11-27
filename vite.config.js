@@ -11,6 +11,7 @@ export default defineConfig({
                 "resources/js/app.js",
                 "resources/js/mermaid.js",
                 "resources/js/math.js",
+                "resources/js/model-viewer.js",
             ],
             refresh: true,
             fonts: [
