@@ -49,7 +49,7 @@
         <h2 class="mt-6 text-2xl font-bold font-sans">Statue of Pangeran Diponegoro, Monumen Nasional, Jakarta</h2>
 
         <p class="mt-4">
-            Reconstructed from a phone video walking around the statue. Frames go into VGGT, one forward pass,
+            Reconstructed from a phone video walking around the statue. Frames go into VGGT, single forward pass,
             no optimization loop. Drag to rotate, scroll to zoom.
         </p>
 
@@ -623,7 +623,7 @@ flowchart TB
     A["Walk-around video"] --> B["<b>Frame sampling</b><br/>sharpest frame per interval"]
     B --> C["<b>Color normalization</b><br/>(optional)"]
     C --> D["<b>Sky removal</b><br/>(optional, Monas only)<br/>paint sky white"]
-    D --> E["<b>VGGT</b><br/>one forward pass:<br/>depth + camera"]
+    D --> E["<b>VGGT</b><br/>single forward pass:<br/>depth + camera"]
     E --> F["<b>Unproject</b><br/>keep top 50% confidence<br/>(+ drop sky pixels)"]
     F --> G["<b>Clean</b><br/>downsample + remove outliers"]
     G --> H["<b>Poisson mesh</b>"]
